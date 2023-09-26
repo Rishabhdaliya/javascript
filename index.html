@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aman Basic</title>
+  <style>
+    body{
+        color: white;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        height: 100vh;
+    }
+    .action{
+        background-color: rgb(25, 25, 245);
+        color: white;
+        padding: 5px 20px;
+        width: 220px;
+        box-shadow: none;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-top: 10px; 
+    }
+
+    .action:hover{
+opacity: 0.9;
+    }
+
+
+    .guess{
+        padding: 5px;
+        width: 200px;
+    }
+
+    .secretNumber{
+        background-color: white;
+        color: black;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+
+</head>
+<body>
+
+  <h1 class="secretNumber"></h1>
+
+    <h1 id="description"></h1>
+
+<input type="number" placeholder="guess the number" name="guess" class="guess"  />
+ 
+<button class="action" type="submit" > Submit </button>
+<script src="script.js" >
+</script>
+</body>
+
+</html>
