@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Aman Basic</title>
-  <style>
-    body{
+  <head>
+    <title>Aman Basic</title>
+    <style>
+      body {
         color: white;
         background-color: black;
         display: flex;
@@ -12,8 +12,8 @@
         flex-direction: column;
         gap: 10px;
         height: 100vh;
-    }
-    .action{
+      }
+      .action {
         background-color: rgb(25, 25, 245);
         color: white;
         padding: 5px 20px;
@@ -22,20 +22,19 @@
         cursor: pointer;
         border: none;
         outline: none;
-        margin-top: 10px; 
-    }
+        margin-top: 10px;
+      }
 
-    .action:hover{
-opacity: 0.9;
-    }
+      .action:hover {
+        opacity: 0.9;
+      }
 
-
-    .guess{
+      .guess {
         padding: 5px;
         width: 200px;
-    }
+      }
 
-    .secretNumber{
+      .secretNumber {
         background-color: white;
         color: black;
         width: 50px;
@@ -44,21 +43,27 @@ opacity: 0.9;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+      }
     </style>
-
-</head>
-<body>
-
-  <h1 class="secretNumber"></h1>
+  </head>
+  <body>
+    <h1 class="secretNumber"></h1>
 
     <h1 id="description"></h1>
 
-<input type="number" placeholder="guess the number" name="guess" class="guess"  />
- 
-<button class="action" type="submit" > Submit </button>
-<script src="script.js" >
-</script>
-</body>
+    <input
+      type="number"
+      placeholder="guess the number"
+      name="guess"
+      class="guess" />
 
+    <button class="newSecret">New Game</button>
+
+    <button
+      class="action"
+      type="submit">
+      Submit
+    </button>
+    <script src="script.js"></script>
+  </body>
 </html>
